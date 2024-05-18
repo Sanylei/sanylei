@@ -1,0 +1,111 @@
+
+
+*{
+   margin:0;
+   padding:0;
+   box-sizing: border-box; 
+ }
+  
+body{ /*essa funcionalidade deixa a tela do site com cor preta*/
+    background-color: black;
+    height: 100vh;
+}
+
+.interface{
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+header{
+    padding: 40px 4%;
+}
+
+.flex{
+    display: flex;
+
+}
+
+header > .interface{ /*estilo do cabeçalho*/
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a{ /*ao passar o mouse por cima dos links a cor muda para branco e tem zoom*/
+    color: rgb(131, 128, 128);
+    text-decoration: none;
+    display: inline-block;
+    transition: 2s;
+}
+
+header a:hover{
+    color: white;
+    transform: scale(1.50);
+}
+
+header nav ul{
+    list-style-type: none;
+}
+
+header nav ul li{
+    display: inline-block;
+    padding: 0 40px;  
+}
+
+section.topo-site{
+    padding: 40px 4%;
+}
+
+section.topo-site .flex{
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+}
+
+.topo-site .txt-topo-site h1{
+    color: darkorchid;
+    font-size: 50px;
+    line-height: 40px;
+}
+
+.topo-site .txt-topo-site p{
+    color: whitesmoke;
+    margin: 40px 0;
+}
+
+.topo-site .img-topo-site img{
+    position: relative;
+    animation: flutuar 3s ease-in-out infinite alternate;
+    
+}
+
+@keyframes flutuar { /*função para deixar a imagem flutuando*/
+    0%{
+        top: 0;
+    }
+    100%{
+        top: 30px;
+    }
+
+    }
+    section.Sobre Mim{
+        padding: 40px 4%;
+    }
+    
+    section.Sobre Mim.flex{
+        align-items: center;
+        gap: 60px;
+    }
+    
+    form{
+        color: ghostwhite;
+    }
+    footer{ /*estilo para nota de rodapé*/
+        padding: 40px 4%;
+        color: darkviolet;
+    }
+    
+
+
+
+
